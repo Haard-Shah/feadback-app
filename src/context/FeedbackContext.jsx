@@ -49,7 +49,6 @@ export const FeedbackProvider = ({children}) => {
     }
 
     const updateFeedbackItem = (id, updItem) => {
-        //ASK: how this works? with the item spreader and upditem spreader
         setFeedback(
             feedback.map((item) => (item.id === id ? {...item, ...updItem } : item))
         )
